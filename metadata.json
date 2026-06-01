@@ -1,0 +1,20 @@
+{
+  "type": "bundle",
+  "version": 1,
+  "env": [
+    {
+      "key": "PATH",
+      "type": "path",
+      "required": true,
+      "value": "${installPath}",
+      "visibility": "public"
+    },
+    {
+      "key": "JFROG_CLI_HOME_DIR",
+      "type": "constant",
+      "required": false,
+      "value": "${installPath}/.jfrog",
+      "visibility": "public"
+    }
+  ]
+}

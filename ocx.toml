@@ -1,0 +1,11 @@
+#:schema https://ocx.sh/schemas/project/v1.json
+# OCX project toolchain for the mirror-jfrog-cli sibling repo.
+#
+# `cli` + `mirror` are the OCX pipeline tools (same pins as the other
+# mirror-* siblings). `uv` is added so `ocx-mirror pipeline plan` finds
+# `uv` on PATH when invoking the PEP 723 generator script.
+
+[tools]
+cli = "dev.ocx.sh/ocx/cli:0.3.5-dev"
+mirror = "dev.ocx.sh/ocx/mirror:0.3.5-dev"
+uv = "ocx.sh/uv:0"
