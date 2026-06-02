@@ -23,8 +23,8 @@ assets:
     - "^jfrog-cli-mac-386-jf$"
   darwin/arm64:
     - "^jfrog-cli-mac-arm64-jf$"
-#  windows/amd64:
-#    - "^jfrog-cli-windows-amd64-jf\\.exe$"
+  windows/amd64:
+    - "^jfrog-cli-windows-amd64-jf\\.exe$"
 
 # Raw binaries (no archive). The pipeline drops the binary into the content
 # root under `name`; on Windows `.exe` is auto-appended from the asset name.
@@ -67,9 +67,9 @@ platforms:
     runner: macos-14
   darwin/arm64:
     runner: macos-14
-#  windows/amd64:
-#    runner: windows-latest
-#    shell: pwsh
+  windows/amd64:
+    runner: windows-latest
+    shell: pwsh
 
 notify:
   discord:
